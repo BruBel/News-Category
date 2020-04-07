@@ -1,4 +1,4 @@
-# News-Category-Kaggle
+# News Category Kaggle
 
 This project was developed to solve [New Category Dataset](https://www.kaggle.com/rmisra/news-category-dataset) problem and create a classifier to predict which category is the news:
 
@@ -56,14 +56,14 @@ $ uvicorn main:app --host 0.0.0.0 --port 5058
 ```
 
 Now there are two options:
-- Go to http://0.0.0.0:5058/docs#/default/predict_category_predict_post
+- Go to http://localhost:5058/docs#/default/predict_category_predict_post
 - Click in "Try it out" and fill in the JSON. Execute.
 
 OR
 
 - In terminal:
 
-curl -X POST "http://0.0.0.0:5058/predict" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"headline\":\"HEADLINEHERE\",\"short_description\":\"SHORTDESCRIPTIONHERE\"}"
+curl -X POST "http://localhost:5058/predict" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"headline\":\"HEADLINEHERE\",\"short_description\":\"SHORTDESCRIPTIONHERE\"}"
 
 
 
